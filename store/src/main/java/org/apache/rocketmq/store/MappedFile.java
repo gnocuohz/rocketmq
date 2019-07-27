@@ -60,6 +60,7 @@ public class MappedFile extends ReferenceResource {
     protected ByteBuffer writeBuffer = null;
     protected TransientStorePool transientStorePool = null;
     private String fileName;
+    // 文件名称就是当前物理位置
     private long fileFromOffset;
     private File file;
     private MappedByteBuffer mappedByteBuffer;

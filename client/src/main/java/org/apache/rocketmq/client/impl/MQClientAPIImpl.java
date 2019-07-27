@@ -348,6 +348,7 @@ public class MQClientAPIImpl {
         return null;
     }
 
+    // 发送同步消息
     private SendResult sendMessageSync(
         final String addr,
         final String brokerName,

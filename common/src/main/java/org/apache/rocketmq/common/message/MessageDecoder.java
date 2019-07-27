@@ -57,6 +57,7 @@ public class MessageDecoder {
         + 4 // 13 RECONSUMETIMES
         + 8; // 14 Prepared Transaction Offset
 
+    // 创建 massage id，里面存了 消息的位置
     public static String createMessageId(final ByteBuffer input, final ByteBuffer addr, final long offset) {
         input.flip();
         input.limit(MessageDecoder.MSG_ID_LENGTH);
